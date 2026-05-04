@@ -1,0 +1,116 @@
+:root {
+  color-scheme: light;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f7f8fc;
+  color: #111827;
+}
+
+.app {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.subtitle {
+  color: #4b5563;
+}
+
+.panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.mission-list,
+.ninja-list {
+  display: grid;
+  gap: 10px;
+}
+
+.mission-card,
+.ninja-card {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px;
+  background: #fafafa;
+}
+
+.mission-card.active {
+  border-color: #3b82f6;
+  background: #eff6ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #374151;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+.inline {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  align-items: center;
+}
+
+.tag {
+  font-size: 12px;
+  border-radius: 999px;
+  padding: 2px 8px;
+  background: #e5e7eb;
+}
+
+.tag.bad {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.tag.good {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.summary ul {
+  margin: 8px 0;
+  padding-left: 18px;
+}
+
+.confirm-message {
+  min-height: 20px;
+  margin-top: 10px;
+  font-weight: 600;
+}
