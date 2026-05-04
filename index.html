@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ninja Manager - Squad Assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Ninja Manager</h1>
+      <p class="subtitle">Assign a squad (1-4 ninjas) to each unresolved mission.</p>
+
+      <section class="panel">
+        <h2>Missions</h2>
+        <div id="mission-list" class="mission-list"></div>
+      </section>
+
+      <section class="panel" id="assignment-panel" hidden>
+        <h2 id="assignment-title">Assign Squad</h2>
+        <p id="mission-description" class="muted"></p>
+
+        <div class="grid">
+          <div>
+            <h3>Available Ninjas</h3>
+            <div id="ninja-list" class="ninja-list"></div>
+          </div>
+
+          <div>
+            <h3>Selected Squad Summary</h3>
+            <div id="summary" class="summary muted">Select between 1 and 4 available ninjas.</div>
+            <button id="confirm-btn" disabled>Confirm Assignment</button>
+            <p id="confirm-message" class="confirm-message"></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
